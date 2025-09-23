@@ -35,7 +35,8 @@ public class Vuelo {
 	
 	
 	public int calcularTiempoVuelo() {
-		return (horaLlegada.getHour()-horaSalida.getHour())
+		
+		return 60*(horaLlegada.getHour()-horaSalida.getHour())
 				+(horaLlegada.getMinute()-horaSalida.getMinute());
 	}
 
